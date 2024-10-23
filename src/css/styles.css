@@ -63,6 +63,11 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
 }
+h2 {
+  color: #44260b;
+  font-size: 2.5rem;
+  padding-left: 5rem;
+}
 .movies {
   padding: 1rem;
   border: 3rem;
@@ -98,7 +103,7 @@ section {
   max-width: 95%;
   margin: 0 auto;
   grid-gap: 2rem;
-  padding: 5rem;
+  padding: 2rem 5rem 5rem 5rem;
 }
 
 .poster-img {
