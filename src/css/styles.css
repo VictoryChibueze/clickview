@@ -70,13 +70,23 @@ nav ul li a {
   border-radius: 1.5rem;
   color: #fff;
 }
-/* section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 95%;
+.message {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  animation: textanimation 2s ease-in-out;
+}
+.message p {
+  color: #221205;
+  font-size: 1.9rem;
+  max-width: 75%;
   margin: 0 auto;
-  grid-gap: 2rem;
-} */
+}
+.message h1 {
+  font-size: 3rem;
+}
 
 section {
   display: grid;
@@ -94,4 +104,63 @@ section {
 }
 .title {
   color: #f0a868;
+}
+.section-explore {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  max-width: 95%;
+  margin: 4rem auto;
+  grid-gap: 2rem;
+  animation: exploreanimation 2s ease-in-out;
+}
+.section-explore div {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--tertiary-color) 100%
+  );
+  max-width: 80%;
+  height: 15rem;
+  margin: 0 auto;
+  padding: 1rem 3rem 3rem 3rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-explore div h2 {
+  color: #f0a868;
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+.section-explore div p {
+  font-size: 1.5rem;
+  color: #ece9e9;
+}
+@keyframes textanimation {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exploreanimation {
+  0% {
+    transform: translateX(500px);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
