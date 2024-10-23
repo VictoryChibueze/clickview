@@ -36,7 +36,7 @@ export default class Popular {
       .map(
         (el) => `
           <div class="movies">
-          <h2 class ="title">${el.title}</h2>
+          <h3 class ="title">${el.title}</h3>
             <img class = "poster-img" src="${imageBaseURL}${el.backdrop_path}" alt="The image of ${el.title}" />
             
             <p class = "overview">${el.overview}</p>

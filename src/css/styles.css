@@ -18,6 +18,7 @@ body {
     rgb(141, 141, 143) 0%,
     rgb(232, 232, 236) 100%
   );
+  overflow-x: hidden;
 }
 .logo {
   font-size: 2rem;
@@ -38,6 +39,9 @@ header {
     rgb(43, 42, 42) 100%
   );
   padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+nav {
   margin-bottom: 2rem;
 }
 nav ul {
@@ -68,7 +72,7 @@ nav ul li a {
     var(--tertiary-color) 100%
   );
   border-radius: 1.5rem;
-  color: #fff;
+  color: #f3f3f3;
 }
 .message {
   text-align: center;
@@ -94,6 +98,7 @@ section {
   max-width: 95%;
   margin: 0 auto;
   grid-gap: 2rem;
+  padding: 5rem;
 }
 
 .poster-img {
@@ -104,6 +109,7 @@ section {
 }
 .title {
   color: #f0a868;
+  font-size: 1.5rem;
 }
 .section-explore {
   display: grid;
@@ -135,9 +141,30 @@ section {
   font-size: 1.75rem;
   padding: 1rem;
 }
+
 .section-explore div p {
   font-size: 1.5rem;
   color: #ece9e9;
+}
+footer {
+  background: linear-gradient(
+    to right,
+    rgb(50, 50, 50) 0%,
+    rgb(43, 42, 42) 100%
+  );
+  position: fixed;
+  bottom: -2.5%;
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+footer p {
+  color: #f0a868;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.75rem;
 }
 @keyframes textanimation {
   0% {
@@ -154,7 +181,7 @@ section {
 
 @keyframes exploreanimation {
   0% {
-    transform: translateX(500px);
+    transform: translateX(80px);
   }
 
   50% {

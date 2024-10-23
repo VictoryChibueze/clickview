@@ -1,6 +1,4 @@
-import { convertToJSON } from "./utils"; // Assuming this utility is to convert the response to JSON
-
-// API URL and headers (ensure API key security in production)
+import { convertToJSON } from "./utils";
 const options = {
   method: "GET",
   headers: {
@@ -10,17 +8,18 @@ const options = {
   },
 };
 
-const url = "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1";
+const url =
+  "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
 
 // Base URL for movie posters (adjustable size)
 const imageBaseURL = "https://image.tmdb.org/t/p/w500";
 
-// Class to fetch and render upcoming movies
-export default class Upcoming {
+// Class to fetch and render popular movies
+export default class TopRated {
   constructor() {}
 
-  // Fetch upcoming movies from the TMDb API
-  async fetchUpcomingMovies() {
+  // Fetch TopRated movies from the TMDb API
+  async fetchTopRatedMovies() {
     const response = await fetch(url, options);
     const data = await convertToJSON(response); // Utility function to convert response to JSON
     console.log(data);
@@ -28,8 +27,8 @@ export default class Upcoming {
   }
 
   // Render the fetched movies into the DOM
-  async renderUpcomingMovies() {
-    const fetchedData = await this.fetchUpcomingMovies();
+  async renderTopRatedMovies() {
+    const fetchedData = await this.fetchTopRatedMovies();
     const element = document.querySelector("section");
 
     // Map over the fetched data and generate HTML
@@ -54,10 +53,10 @@ export default class Upcoming {
   }
 }
 
-// Initialize the Upcoming class and render the movies
-const upcomingMovies = new Upcoming();
-upcomingMovies.renderUpcomingMovies(); // Fetch and render movies
+// Initialize the Popular class and render the movies
+const topRatedMovies = new TopRated();
+topRatedMovies.renderTopRatedMovies(); // Fetch and render movies
 
 // Optional: Fetch and log movies info (if needed)
-const upcomingMoviesInfo = upcomingMovies.fetchUpcomingMovies();
-console.log(upcomingMoviesInfo);
+const topRatedMoviesInfo = topRatedMovies.fetchTopRatedMovies();
+console.log(topRatedMoviesInfo);
