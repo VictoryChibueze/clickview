@@ -19,7 +19,46 @@ body {
     rgb(232, 232, 236) 100%
   );
 }
-
+.logo {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.highlight {
+  color: #f0a868;
+  font-size: 2.5rem;
+}
+header {
+  background: linear-gradient(
+    to right,
+    rgb(50, 50, 50) 0%,
+    rgb(43, 42, 42) 100%
+  );
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+nav ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: #8e4a0e;
+  padding: 0.75rem;
+  border-radius: 2rem;
+}
+nav ul li:hover {
+  background-color: #f0a868;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
 .movies {
   padding: 1rem;
   border: 3rem;

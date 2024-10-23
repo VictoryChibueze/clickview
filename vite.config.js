@@ -1,7 +1,7 @@
 import { resolve } from "path";
 // eslint-disable-next-line import/namespace
 import { defineConfig } from "vite";
-import Upcoming from "./src/js/upcoming";
+// import Upcoming from "./src/js/upcoming";
 
 export default defineConfig({
   root: "src/",
