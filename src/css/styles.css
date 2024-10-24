@@ -48,6 +48,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
+  padding: 0;
 }
 nav ul li {
   list-style: none;
@@ -103,7 +104,7 @@ section {
   max-width: 95%;
   margin: 0 auto;
   grid-gap: 2rem;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 2rem 2rem 5rem 2rem;
 }
 
 .poster-img {
@@ -118,11 +119,12 @@ section {
 }
 .section-explore {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   max-width: 95%;
-  margin: 4rem auto;
+  margin: 1rem auto;
   grid-gap: 2rem;
   animation: exploreanimation 2s ease-in-out;
+  padding: 1rem 0;
 }
 .section-explore div {
   text-align: center;
@@ -132,7 +134,7 @@ section {
     var(--tertiary-color) 100%
   );
   max-width: 80%;
-  height: 15rem;
+  height: 100%;
   margin: 0 auto;
   padding: 1rem 3rem 3rem 3rem;
   border-radius: 2rem;
