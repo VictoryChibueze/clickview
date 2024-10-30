@@ -35,14 +35,17 @@ export default class Popular {
     const html = fetchedData
       .map(
         (el) => `
-          <div class="movies">
-          <h3 class ="title">${el.title}</h3>
+          <a href="../details/index.html?id=${el.id}" class="movies">
+          <div >
+           <h3 class ="title">${el.title}</h3>
             <img class = "poster-img" src="${imageBaseURL}${el.backdrop_path}" alt="The image of ${el.title}" />
             
             <p class = "overview">${el.overview}</p>
             <p>Rating: ${el.vote_average}⭐</p>
             <span>Release Date: ${el.release_date}</span>
           </div>
+
+        </a>
         `,
       )
       .join(""); // Join the array into a single HTML string

@@ -6,17 +6,6 @@ const options = {
     "x-rapidapi-host": "imdb-top-100-movies.p.rapidapi.com",
   },
 };
-function moviesCardTemplate(movie) {
-  return `
-         <a href="">
-            <div class="movies">
-              <img src= "" alt="" />
-              <h3>Title</h3>
-              <p>Genre</p>
-              <p>Rating</p>
-            </div>
-          </a>`;
-}
 
 export default class Movies {
   constructor() {}
