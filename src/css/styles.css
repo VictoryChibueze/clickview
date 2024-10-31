@@ -28,6 +28,16 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.logo svg {
+  height: 2rem;
+  width: 2rem;
+  float: right;
+  margin-right: 2rem;
+  fill: white;
+}
+.logo svg:hover {
+  fill: #f0a868;
+}
 .highlight {
   color: #f0a868;
   font-size: 2.5rem;
@@ -155,19 +165,7 @@ section {
   color: #ece9e9;
 }
 
-/* .movie-detail {
-  width: 80%;
-  margin: 0 auto;
-}
-.movie-detail img {
-  width: 100%;
-  min-width: 100%;
-  height: 40vh;
-  object-fit: cover; 
-  object-position: center;
-} */
-
-/* .movie-detail {
+.movie-detail {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -180,35 +178,7 @@ section {
 
 .movie-detail img {
   width: 100%;
-  max-height: 60vh;
-  object-fit: cover;
-  object-position: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 11, 53, 0.8);
-  pointer-events: none;
-} */
-
-.movie-detail {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-}
-
-.movie-detail img {
-  width: 100%;
-  max-height: 60vh;
+  height: 60vh;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
@@ -229,22 +199,32 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+  transform: translate(-50%, -55%);
+  color: rgb(253, 248, 248);
+  text-align: start;
   z-index: 1;
 }
 
 .text-overlay h3 {
   margin: 0;
   font-size: 2rem;
+  color: #f0a868;
 }
 
 .text-overlay p {
   margin: 0.3rem 0;
   font-size: 1.2rem;
 }
-
+#favoriteBtn {
+  background-color: #8e4a0e;
+  color: #ece9e9;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+#favoriteBtn:hover {
+  background-color: #b86e2d;
+}
 footer {
   background: linear-gradient(
     to right,
@@ -269,6 +249,13 @@ footer p {
 @media only screen and (min-width: 40rem) {
   .movie-detail img {
     height: 36rem;
+  }
+  .text-overlay h3 {
+    font-size: 3.3rem;
+  }
+  .text-overlay p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
   }
 }
 @keyframes textanimation {
