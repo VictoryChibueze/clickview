@@ -35,7 +35,7 @@ export default class TopRated {
     const html = fetchedData
       .map(
         (el) => `
-        <a href="../details/index.html?id=${el.id}" class="movies">">
+        <a href="../details/index.html?id=${el.id}" class="movies">
           <div >
            <h3 class ="title">${el.title}</h3>
             <img class = "poster-img" src="${imageBaseURL}${el.backdrop_path}" alt="The image of ${el.title}" />
