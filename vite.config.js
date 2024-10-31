@@ -13,6 +13,7 @@ export default defineConfig({
         upcoming: resolve(__dirname, "src/upcoming/index.html"),
         popular: resolve(__dirname, "src/popular/index.html"),
         topRated: resolve(__dirname, "src/topRated/index.html"),
+        details: resolve(__dirname, "src/details/index.html"),
       },
     },
   },
